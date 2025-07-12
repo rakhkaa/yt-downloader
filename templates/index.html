@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube downloader using flask & pytubefix</title>
+</head>
+<body>
+    <form method="post">
+        <label for="url">URL : </label>
+        <input type="text" name="url" id="url">
+        <input type="submit" value="download">
+    </form>
+
+    {% if video %}
+
+    <video src="{{ video }}">video not found</video>
+
+    {% endif %}
+
+</body>
+</html>
